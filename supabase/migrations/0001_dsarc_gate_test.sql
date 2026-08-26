@@ -3,6 +3,7 @@
 -- When this is pushed to a release* branch, OmniSync should classify it as
 -- DDL, create a YouTrack DSARC ticket, mark the webhook event Pending, and
 -- lock the Publish button until the ticket is approved.
+-- Locker
 
 CREATE TABLE dsarc_gate_test (
     id          serial PRIMARY KEY,
