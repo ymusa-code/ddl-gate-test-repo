@@ -1,0 +1,23 @@
+migrations/0002_replit_dsarc_retrigger.sql
+  b81a69c57a4f981c 1-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "1bf4cf857b637cff04914e89654c4376b5852da1",
+  "prompts": {
+    "b81a69c57a4f981c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "87ee516f-b11c-485e-8512-0f7651a91fd0",
+        "model": "accounts/fireworks/models/glm-5p2"
+      },
+      "human_author": "Yusuf Musa",
+      "messages": [],
+      "total_additions": 5,
+      "total_deletions": 0,
+      "accepted_lines": 5,
+      "overriden_lines": 0
+    }
+  }
+}
