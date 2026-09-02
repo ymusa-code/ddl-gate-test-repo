@@ -1,0 +1,19 @@
+# Minimal CI for the DSARC gate demo on ddl-gate-mirror-test.
+#
+# OmniSync's real generated pipeline includes 7 stage templates from
+# WebMD/helios/DevOps/gitlab-ci.yml-templates (build/feature/devint/qa/preview/staging/production).
+# This repo only needs ONE thing from CI: a pipeline that reaches "success" so the
+# publish gate's GitLabPipelineId (term 2) and GitLabPipelineStatus=="success" (term 6)
+# are satisfied. A single no-op job that exits 0 is enough for that.
+#
+# Requires: a runner available to the ddl-gate-mirror-test GitLab project
+# (shared group runner under WebMD, or a project runner accepting untagged jobs).
+# If the job sticks on "pending", CI/CD is disabled or no runner is assigned —
+# that's a project setting, not a yaml problem.
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - echo "Pipeline OK"
