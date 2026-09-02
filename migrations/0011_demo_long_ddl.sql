@@ -1,3 +1,4 @@
+-- RETRY PUSH (2nd attempt): first push 4eb00e3 did not reach smee; re-pushing to trigger a fresh GitHub webhook event.
 -- DEMO: long-content DDL to prove the 5e9e052 no-truncation change (HELIOS-99030).
 -- This single file exceeds BOTH old caps: 200 per-file AND 500 push-total.
 -- Pushed while DSARC-3513 is still open -> dedup appends the FULL content as a comment.
